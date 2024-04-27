@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Пошук авто</title>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<form action="https://fom.in.ua/echo" method="post">
+				<fieldset>
+					<legend>Пошук автомобіля</legend>
+					<p>
+						<select>
+							<option value="a1" disabled="disabled" selected="selected">
+								Тип кузова
+							</option>
+							<option value="a2">Седан</option>
+							<option value="a3">Хетчбек</option>
+							<option value="a4">Універсал</option>
+							<option value="a5">Мінівен</option>
+							<option value="a6">Купе</option>
+						</select>
+					</p>
+					<br />
+					<p>
+						<select>
+							<option value="b1" disabled="disabled" selected="selected">
+								Марка автомобіля
+							</option>
+							<option value="BMW">BMW</option>
+							<option value="Mersedes">Mersedes</option>
+							<option value="Wolskwagen">Wolskwagen</option>
+							<option value="MAZDA">MAZDA</option>
+							<option value="AUDI">AUDI</option>
+						</select>
+					</p>
+					<br />
+					<p>
+						<select>
+							<option value="c3" disabled="disabled" selected="selected">
+								Країна виробник
+							</option>
+							<option value="Японія">Японія</option>
+							<option value="Німеччина">Німеччина</option>
+							<option value="Корея">Корея</option>
+						</select>
+					</p>
+					<br />
+					<p>
+						<label for="price">Ціна</label>
+						<input
+							id="price"
+							type="number"
+							placeholder="від"
+							min="0"
+							max="10000"
+						/>
+						<input type="number" placeholder="до" min="5000" max="50000" />
+					</p>
+					<br />
+					<p>
+						<label for="year">Рік випуску</label>
+						<input
+							id="year"
+							type="number"
+							placeholder="від"
+							min="1960"
+							max="2023"
+						/>
+						<input type="number" placeholder="до" min="1961" max="2024" />
+					</p>
+					<br />
+					<fieldset>
+						<legend>Стан авто</legend>
+						<label>Не бита</label>
+						<input type="checkbox" /><br />
+						<label>Бита</label>
+						<input type="checkbox" /><br />
+						<label>Не фарбована</label>
+						<input type="checkbox" /><br />
+						<label>Розмитнена</label>
+						<input type="checkbox" /><br />
+						<label>У кредиті</label>
+						<input type="checkbox" />
+					</fieldset>
+					<br />
+					<p>
+						<select>
+							<option value="f1" disabled="disabled" selected="selected">
+								Тип палива
+							</option>
+							<option value="Бензин">Бензин</option>
+							<option value="Дизель">Дизель</option>
+							<option value="Газ">Газ</option>
+							<option value="Газ+Бензин">Газ+Бензин</option>
+						</select>
+					</p>
+					<br />
+					<fieldset>
+						<legend>Тип коробки передач</legend>
+							<label>Механіка</label>
+							<input type="checkbox" /><br />
+							<label>Автомат</label>
+							<input type="checkbox" />
+						<br />
+					</fieldset>
+					<p>
+						<label for="color">Колір авто</label><br />
+						<input id="color" type="color" />
+					</p>
+					<fieldset>
+						<legend>Комфорт</legend>
+						<label>Люк</label>
+						<input type="checkbox" /><br />
+						<label>Шкряний салон</label>
+						<input type="checkbox" /><br />
+						<label>Лед фари</label>
+						<input type="checkbox" /><br />
+						<label>Титани</label>
+						<input type="checkbox" /><br />
+						<label>Саунд система</label>
+						<input type="checkbox" />
+					</fieldset>
+				</fieldset>
+				<br />
+				<button type="submit">BUTTON</button>
+				<button type="reset">RESET</button>
+			</form>
+		</main>
+		<footer></footer>
+	</body>
+</html>
