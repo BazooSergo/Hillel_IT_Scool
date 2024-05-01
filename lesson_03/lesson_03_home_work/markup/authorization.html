@@ -12,17 +12,24 @@
 				<fieldset>
 					<legend>Авторизація</legend>
 					<p>
-						<label for="email">Email</label><br />
-						<input id="email" type="email" placeholder="email" />
+						<label for="email">Ел. адреса</label><br />
+						<input id="email" type="email" placeholder="email" name="email" />
 					</p>
 					<p>
-						<label for="password">Password</label><br />
-						<input id="password" type="password" placeholder="password" />
+						<label for="userPassword">Пароль</label><br />
+						<input
+							id="userPassword"
+							type="password"
+							autocomplete="current-password"
+							placeholder="Password"
+							required
+						/>
 					</p>
 				</fieldset>
-				<br />
-				<button type="submit">BUTTON</button>
-				<button type="reset">RESET</button>
+				<p>
+					<input type="submit" value="Увійти" />
+					<input type="reset" value="Скинути" />
+				</p>
 			</form>
 		</main>
 		<footer></footer>

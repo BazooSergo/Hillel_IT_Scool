@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lesson 3</title>
+		<style>
+			table {
+				table-layout: fixed;
+				width: 100%;
+				border-collapse: collapse;
+				border: 1px solid rgb(0, 0, 0);
+			}
+			th,
+			td {
+				border: 1px solid rgb(0, 0, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<video
+			src="./media/video/file_example_MP4_1920_18MG.mp4"
+			width="50%"
+			muted
+			autoplay
+			loop
+		>
+			yrghg
+		</video>
+		<audio
+			src="./media/audio/muzika_v_mashinu_2024_-_sarah_de_warren_feat_charming_horses__hanno_-_this_is_the_life_(z3.fm).mp3"
+			controls
+		></audio>
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/vXl-EV7um7g?si=4d9_9ntpylO6c45j"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen
+		></iframe>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="5">header</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="3">Phone 1</td>
+					<td>body</td>
+					<td>body</td>
+					<td>body</td>
+					<td>body</td>
+				</tr>
+				<tr>
+					<td colspan="3">body</td>
+					<td>body</td>
+				</tr>
+				<tr>
+					<td>body</td>
+					<td colspan="2" rowspan="3">body</td>
+					<td>body</td>
+				</tr>
+				<tr>
+					<td>body</td>
+					<td>body</td>
+					<td>body</td>
+				</tr>
+				<tr>
+					<td>body</td>
+					<td>body</td>
+					<td>body</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5">footer</td>
+				</tr>
+			</tfoot>
+		</table>
+		<br />
+		<br />
+		<br />
+		<br />
+		<table>
+			<thead>
+				<tr>
+					<th>Text</th>
+					<th>Text</th>
+					<th>Text</th>
+					<th>Text</th>
+					<th>Text</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1 Text</td>
+					<td>2 Text</td>
+					<td>3 Text</td>
+					<td>4 Text</td>
+					<td>5 Text</td>
+				</tr>
+				<tr>
+					<td>1 Text</td>
+					<td>2 Text</td>
+					<td>3 Text</td>
+					<td>4 Text</td>
+					<td>5 Text</td>
+				</tr>
+				<tr>
+					<td>1 Text</td>
+					<td>2 Text</td>
+					<td>3 Text</td>
+					<td>4 Text</td>
+					<td>5 Text</td>
+				</tr>
+				<tr>
+					<td>1 Text</td>
+					<td>2 Text</td>
+					<td>3 Text</td>
+					<td>4 Text</td>
+					<td>5 Text</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Text</td>
+					<td>Text</td>
+					<td>Text</td>
+					<td>Text</td>
+					<td>Text</td>
+				</tr>
+			</tfoot>
+		</table>
+		<br />
+		<br />
+		<form action="#">
+			<fieldset>
+				<legend>ЮЗЕР</legend>
+				<p>
+					<label for="name">ПІП</label><br />
+					<input id="name" type="text" placeholder="Прізвище" />
+					<input type="text" placeholder="Ім'я" />
+					<input type="text" placeholder="По батькові" />
+				</p>
+				<p>
+					<label for="email">Email</label><br />
+					<input id="email" type="email" placeholder="email" />
+				</p>
+				<p>
+					<label for="password">Password</label><br />
+					<input id="password" type="password" placeholder="password" />
+				</p>
+				<p>
+					<label for="date">Date</label><br />
+					<input id="date" type="date" />
+				</p>
+				<p>
+					<label for="time">Time</label><br />
+					<input id="time" type="time" />
+				</p>
+				<p>
+					<label for="number">Number</label><br />
+					<input
+						id="number"
+						type="number"
+						placeholder="number"
+						min="0"
+						max="10"
+						step="2"
+					/>
+				</p>
+				<p>
+					<label for="color">Color</label><br />
+					<input id="color" type="color" />
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Radio</legend>
+				<ul>
+					<li>
+						<label for="f">М</label>
+						<input id="f" type="radio" name="fm" checked />
+					</li>
+					<li>
+						<label for="m">Ж</label>
+						<input id="m" type="radio" name="fm" />
+					</li>
+				</ul>
+				<p>
+					<label for="f1">М</label>
+					<input id="f1" type="radio" name="fm" /><br />
+					<label for="m1">Ж</label>
+					<input id="m1" type="radio" name="fm" />
+				</p>
+				<label for="ch">М</label>
+				<input id="ch" type="checkbox" name="ch" checked="checked" /><br />
+				<label for="ch1">Ж</label>
+				<input id="ch1" type="checkbox" name="ch" />
+			</fieldset>
+			<fieldset>
+				<p>
+					<label for="message">Message</label><br />
+					<textarea
+						id="message"
+						cols="100"
+						rows="10"
+						placeholder="ТЕКСТ"
+					></textarea>
+				</p>
+				<select>
+					<option value="Київ">Київ</option>
+					<option value="Харків">Харків</option>
+					<option value="Одеса">Одеса</option>
+					<option value="Полтава">Полтава</option>
+					<option value="Кременчук">Кременчук</option>
+				</select>
+			</fieldset>
+			<button type="submit">BUTTON</button>
+			<button type="reset">RESET</button>
+		</form>
+	</body>
+</html>

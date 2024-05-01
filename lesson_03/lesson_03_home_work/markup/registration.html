@@ -10,27 +10,88 @@
 		<main>
 			<form action="https://fom.in.ua/echo" method="post">
 				<fieldset>
-					<legend>Реєстрація нового користувача</legend>
+					<legend>Реєстрація</legend>
 					<p>
-						<label for="email">Email</label><br />
-						<input id="email" type="email" placeholder="email" />
+						<label for="name">Ім'я</label><br />
+						<input id="name" type="text" placeholder="Ім'я" name="Ім'я" />
 					</p>
 					<p>
-						<label for="password">Password</label><br />
-						<input id="password" type="password" placeholder="password" />
-					</p>
-					<p>
-						<label for="password2">Password</label><br />
+						<label for="name_2">Прізвище</label><br />
 						<input
-							id="password2"
+							id="name_2"
+							type="text"
+							placeholder="Прізвище"
+							name="Прізвище"
+						/>
+					</p>
+					<p>
+						<label for="date">Дата народження</label><br />
+						<input id="date" type="date" name="Дата народження" />
+					</p>
+					<p>
+						<label>Стать</label><br />
+						<label for="m">Ч</label>
+						<input id="m" type="radio" name="Стать" />
+						<label for="f">Ж</label>
+						<input id="f" type="radio" name="Стать" />
+					</p>
+					<p>
+						<select name="Місто">
+							<option value="Київ">Оберіть місто</option>
+							<option value="Київ">Київ</option>
+							<option value="Харків">Харків</option>
+							<option value="Одеса">Одеса</option>
+							<option value="Дніпро">Дніпро</option>
+							<option value="Донецьк">Донецьк</option>
+							<option value="Запоріжжя">Запоріжжя</option>
+							<option value="Львів">Львів</option>
+							<option value="Кривий Ріг">Кривий Ріг</option>
+							<option value="Миколаїв">Миколаїв</option>
+							<option value="Севастополь">Севастополь</option>
+							<option value="Маріуполь">Маріуполь</option>
+							<option value="Луганськ">Луганськ</option>
+						</select>
+					</p>
+					<p>
+						<label for="email">Ел. адреса</label><br />
+						<input
+							id="email"
+							type="email"
+							autocomplete="email"
+							placeholder="email"
+							name="email"
+						/>
+					</p>
+					<p>
+						<label for="userPassword">Пароль</label><br />
+						<input
+							id="userPassword"
 							type="password"
-							placeholder="password confirm"
+							autocomplete="current-password"
+							placeholder="Password"
+							required
+						/>
+					</p>
+					<p>
+						<label for="password_2">Підтвердження пароля</label><br />
+						<input
+							id="password_2"
+							type="password"
+							placeholder="Current Password"
+							autocomplete="current-password"
 						/>
 					</p>
 				</fieldset>
-				<br />
-				<button type="submit">BUTTON</button>
-				<button type="reset">RESET</button>
+				<p>
+					<input id="ch" type="checkbox" name="Згода" />
+					<label for="ch">Приймаю згоду на обробку персональних даних</label>
+				</p>
+				<p>
+					<!-- <input type="submit" value="Відправити"> -->
+					<!-- <input type="reset" value="Скинути"> -->
+					<button type="submit">Зареєструватися</button>
+					<button type="reset">Скинути</button>
+				</p>
 			</form>
 		</main>
 		<footer></footer>
